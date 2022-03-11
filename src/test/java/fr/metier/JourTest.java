@@ -13,8 +13,9 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package tp10.metier;
+package fr.metier;
 
+import fr.metier.Jour;
 import org.junit.jupiter.api.Assertions;
 
 public class JourTest {
@@ -30,5 +31,21 @@ public class JourTest {
         Integer result = j1.getNoJour();
         Assertions.assertEquals(numJour,result);
         
+    }
+    
+    @org.junit.jupiter.api.Test
+    public void testToString(){
+        Integer numJour = 3;
+        Jour j1 = new Jour(numJour);
+        
+        Assertions.assertEquals(j1.toString(),"Jour "+numJour);
+    }
+    
+    @org.junit.jupiter.api.Test
+    public void testEquals(){
+        Integer numJour = 3;
+        Jour j1 = new Jour(numJour);
+        
+        Assertions.assertTrue(j1.equals(j1));
     }
 }

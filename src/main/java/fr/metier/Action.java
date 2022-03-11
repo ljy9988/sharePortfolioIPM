@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package tp10.metier;
+package fr.metier;
 
 /**
  *
@@ -33,7 +33,7 @@ public abstract class Action {
         return nom;
     }
 
-    public Action(String nom) {
+    protected Action(String nom) {
         this.nom = nom;
     }
     
