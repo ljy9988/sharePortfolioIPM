@@ -9,7 +9,7 @@ import java.util.HashMap;
 
 /**
  *
- * @author perussel
+ * @author Jiayin LI
  */
 public class ActionCompliquee extends Action {
 
